@@ -7,9 +7,16 @@ describe "Author model", type: :model do
         expect(author.first_name).to eq("Alan")
         expect(author.last_name).to eq("Turing")
         expect(author.homepage).to eq("http://wikipedia.org/Alan_Turing")
-        #author = Author.new(...)
-        #expect(author.first_name).to eq(...)
-        #expect(author.last_name).to eq(...)
-        #expect(author.homepage).to eq(...)
+        expect(author.name).to eq("Alan Turing")
     end
-  end
+
+end
+
+#describe "Author model", type: :model do
+#
+#    it "Method name should return full name of an author"
+#        author = Author.new(first_name: "Alan", last_name: "Turing",homepage: "http://wikipedia.org/Alan_Turing")
+#        expect(author.name).to eq("Alan Turing")
+#    end
+#
+#end
