@@ -10,6 +10,6 @@ class AuthorsController < ApplicationController
 	end
 
 	def show
-		@article = Article.find(params[:id])
+		@article = Author.find(params[:id])
 	end
 end
