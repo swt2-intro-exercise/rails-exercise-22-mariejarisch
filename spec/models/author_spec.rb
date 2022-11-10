@@ -11,12 +11,3 @@ describe "Author model", type: :model do
     end
 
 end
-
-#describe "Author model", type: :model do
-#
-#    it "Method name should return full name of an author"
-#        author = Author.new(first_name: "Alan", last_name: "Turing",homepage: "http://wikipedia.org/Alan_Turing")
-#        expect(author.name).to eq("Alan Turing")
-#    end
-#
-#end
