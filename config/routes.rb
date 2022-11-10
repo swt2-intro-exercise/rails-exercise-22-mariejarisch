@@ -12,7 +12,7 @@ Rails.application.routes.draw do
   
  # get "new_author/index", to: "authors#new"
   
- # get "authors", to: "authors#index"
+  get "authors", to: "authors#index"
   
  # get "authors/index", to: "authors#index"
 
