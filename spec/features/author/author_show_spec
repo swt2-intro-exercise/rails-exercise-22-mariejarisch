@@ -1,0 +1,8 @@
+require 'rails_helper'
+
+describe "Author show page", type: :feature do
+	it "should display an author's details" do
+		visit visit author_path(@alan)
+        expect(page).to have_text("First Name: Alan Last Name: Turing Homepage: http://wikipedia.de/Alan_Turing")
+	end
+end
