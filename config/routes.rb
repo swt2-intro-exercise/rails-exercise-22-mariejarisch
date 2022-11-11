@@ -13,8 +13,10 @@ Rails.application.routes.draw do
  # get "new_author/index", to: "authors#new"
   
   get "authors", to: "authors#index"
+
+  get "author_path", to: "authors#show"
   
- # get "authors/index", to: "authors#index"
+  # get "authors/index", to: "authors#index"
 
 
   # Example resource route (maps HTTP verbs to controller actions automatically):
