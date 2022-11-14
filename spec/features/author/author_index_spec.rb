@@ -16,6 +16,12 @@ describe "Author index page", type: :feature do
 		visit authors_path
 		expect(page).to have_link 'New author', href: new_author_path
 	end
+
+	it "should be possible to delete the author" do
+		@alan = FactoryBot.create :author
+		visit authors_path
+		expect(page).to have_link 'Delete'
+	  end
 end
 
 # overview page should contain an HTML table with the headings "Name" and "Homepage",
