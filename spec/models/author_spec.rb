@@ -11,9 +11,6 @@ describe "Author model", type: :model do
     end
 
     it "should fail validation when a new author is created without last name" do
-		#visit new_author_path
-		#page.fill_in 'author[first_name]', with: 'Alan'
-		#page.fill_in 'author[homepage]', with: 'http://wikipedia.org/Alan_Turing'
         author = Author.new(first_name: "Alan", last_name: "", homepage: "http://wikipedia.org/Alan_Turing")
 		expect(author).to_not be_valid
 	end
