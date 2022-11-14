@@ -2,10 +2,6 @@
 
 <%= render "form", paper: @paper %>
 
-<br>
-
-
-
 <%= form_with(model: @paper, local: true) do |form| %>
 	<p>
     		<%= form.label :title %><br>
@@ -31,7 +27,9 @@
  	</p>
 <% end %>
 
- <div>
+<br>
+
+<div>
   <%= link_to "Show this paper", @paper %> |
   <%= link_to "Back to papers", papers_path %>
 </div>
