@@ -20,5 +20,10 @@ describe "Paper model", type: :model do
     it "should fail validation when a new paper is created with year not being a numerical value" do
       paper = Paper.new(title: "Skalierbare Softwareentwicklung", venue: "HPI", year: "x")
       expect(paper).to_not be_valid
-  end
+    end
+
+    it "should have an empty list of authors" do
+      paper = Paper.new(title: "Skalierbare Softwareentwicklung", venue: "HPI", year: "2020")
+      expect(paper.authors).to eq([])
+    end
 end
