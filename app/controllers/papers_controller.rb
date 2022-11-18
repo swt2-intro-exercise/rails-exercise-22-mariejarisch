@@ -3,7 +3,8 @@ class PapersController < ApplicationController
 
   # GET /papers
   def index
-    @papers = Paper.all
+    #@papers = Paper.all
+    @papers = Paper.specific_year(params[:year])
   end
 
   # GET /papers/1
@@ -17,7 +18,7 @@ class PapersController < ApplicationController
 
   # GET /papers/1/edit
   def edit
-    @paper = Paper.find(params[:id])
+    #@paper = Paper.find(params[:id])
   end
 
   # POST /papers
