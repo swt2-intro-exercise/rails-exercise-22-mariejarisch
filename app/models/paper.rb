@@ -1,5 +1,5 @@
 class Paper < ApplicationRecord
-    scope :specific_year, ->(int) { where("year = ?", int) }
+    scope :specific_year, ->(int) { where("year == ?", int) if int.present? }
 
     validates :title, presence: true
     validates :venue, presence: true
