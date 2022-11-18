@@ -11,8 +11,8 @@ class PapersController < ApplicationController
   #  end
   #end
   def index
-    @papers = Paper.all
-    #@papers = Paper.specific_year(params[:year])
+  #  @papers = Paper.all
+    @papers = Paper.specific_year(params[:year])
   end
 
   # GET /papers/1
